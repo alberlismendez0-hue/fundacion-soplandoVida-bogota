@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import BrandRibbon from './components/BrandRibbon';
 import ConditionsSection from './components/ConditionsSection';
 import AboutUs from './components/AboutUs';
 import TrustBanner from './components/TrustBanner';
@@ -31,35 +32,38 @@ export default function App() {
 
       {/* Main Page Flow with Organic Alternating Rhythm */}
       <main className="flex-grow">
-        {/* A. Hero Section (White + Wave transition into Slate-50) */}
+        {/* A. Hero Section */}
         <Hero onOpenSchedule={handleOpenSchedule} />
 
-        {/* B. Condiciones que Acompañamos (Slate-50 + Depth Cards) */}
+        {/* ⭐ FRANJA DE MARCA (Elimina el hueco blanco y conecta el Hero con Condiciones) */}
+        <BrandRibbon />
+
+        {/* B. Condiciones que Acompañamos */}
         <ConditionsSection onOpenSchedule={handleOpenSchedule} />
 
-        {/* C. Quiénes Somos (White + Depth Tabs + Wave transition into Navy) */}
+        {/* C. Quiénes Somos */}
         <AboutUs onOpenSchedule={handleOpenSchedule} />
 
-        {/* D. Cintillo Intermedio de Valor, Autoridad y Fe (Navy + Wave into White) */}
+        {/* D. Cintillo Intermedio de Valor, Autoridad y Fe */}
         <TrustBanner onOpenSchedule={handleOpenSchedule} />
 
-        {/* E. 6 Objetivos Institucionales (White + Top-Accented Cards + Wave into Slate-50) */}
+        {/* E. 6 Objetivos Institucionales */}
         <Objectives />
 
-        {/* F. Servicios y Modalidades (Slate-50 + Showcase Cards + Wave into White) */}
+        {/* F. Servicios y Modalidades */}
         <Services onOpenSchedule={handleOpenSchedule} />
 
-        {/* G. Orientación OMS en Salud Mental (White + Depth Cards + Wave into Gradient) */}
+        {/* G. Orientación OMS en Salud Mental */}
         <MentalHealthWHO />
 
-        {/* H. Testimonios y Citas de Fe (Warm Gradient + Wave into Slate-50) */}
+        {/* H. Testimonios y Citas de Fe */}
         <Testimonials />
 
-        {/* I. Contacto y Ubicación (Slate-50 + Elevated Cards & Map + Wave into Navy) */}
+        {/* I. Contacto y Ubicación */}
         <ContactSection />
       </main>
 
-      {/* J. Footer (Deep Navy bg-slate-900) */}
+      {/* J. Footer */}
       <Footer onOpenSchedule={handleOpenSchedule} />
 
       {/* Persistent Discrete Floating WhatsApp Button */}
