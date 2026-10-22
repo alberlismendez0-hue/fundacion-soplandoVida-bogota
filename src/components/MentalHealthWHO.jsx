@@ -35,10 +35,10 @@ export default function MentalHealthWHO() {
             LINEAMIENTOS DE LA OMS EN SALUD MENTAL[cite: 3]
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
-            Orientación en Salud Mental Comunitaria[cite: 3]
+            Orientación en Salud Mental Comunitaria
           </h2>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Adoptamos las directrices de la Organización Mundial de la Salud (OMS) para la atención integral en salud mental, reemplazando el viejo paradigma del asilo por un modelo de <strong>Hogar Protegido</strong> centrado en la dignidad, el acompañamiento continuo y un entorno afectivo seguro[cite: 2, 3].
+            Adoptamos las directrices de la Organización Mundial de la Salud (OMS) para la atención integral en salud mental, reemplazando el viejo paradigma del asilo por un modelo de <strong>Hogar Protegido</strong> centrado en la dignidad, el acompañamiento continuo y un entorno afectivo seguro.
           </p>
         </div>
 
@@ -56,10 +56,10 @@ export default function MentalHealthWHO() {
                     <Icon className="w-5 h-5" />
                   </div>
                   <h3 className="text-base font-bold text-slate-900 mb-2">
-                    {pilar.title}[cite: 3]
+                    {pilar.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    {pilar.desc}[cite: 3]
+                    {pilar.desc}
                   </p>
                 </div>
               </div>
