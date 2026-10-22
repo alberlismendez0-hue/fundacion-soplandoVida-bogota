@@ -54,7 +54,7 @@ export default function ConditionsSection({ onOpenSchedule }) {
   ];
 
   return (
-    <section id="condiciones" className="py-20 lg:py-24 bg-slate-50 relative">
+   <section id="condiciones" className="pt-6 pb-12 lg:pt-8 lg:pb-16 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Section Header */}

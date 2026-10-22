@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import BrandRibbon from './components/BrandRibbon';
 import ConditionsSection from './components/ConditionsSection';
 import AboutUs from './components/AboutUs';
 import TrustBanner from './components/TrustBanner';
@@ -35,8 +34,6 @@ export default function App() {
         {/* A. Hero Section */}
         <Hero onOpenSchedule={handleOpenSchedule} />
 
-        {/* ⭐ FRANJA DE MARCA (Elimina el hueco blanco y conecta el Hero con Condiciones) */}
-        <BrandRibbon />
 
         {/* B. Condiciones que Acompañamos */}
         <ConditionsSection onOpenSchedule={handleOpenSchedule} />

@@ -5,7 +5,7 @@ import WaveDivider from './WaveDivider';
 export default function Hero({ onOpenSchedule }) {
   return (
     <div className="relative bg-white">
-      <section id="inicio" className="pt-10 pb-12 lg:pt-16 lg:pb-20">
+      <section id="inicio" className="bg-white pt-8 pb-4 lg:pt-12 lg:pb-6 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
             
