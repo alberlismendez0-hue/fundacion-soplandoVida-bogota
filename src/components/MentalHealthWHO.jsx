@@ -5,13 +5,10 @@ export default function MentalHealthWHO() {
   const stages = [
     {
       step: '01',
-      title: 'Detección en sus primeras fases',
-      subtitle: 'Diagnóstico oportuno, aseguramiento médico y atención ante crisis',
+      title: 'Atención de la salud mental',
       icon: Stethoscope,
       accent: 'border-l-sky-600',
       tagColor: 'text-sky-800 bg-sky-50 border-sky-200',
-      description:
-        'La atención integral prioriza la detección temprana, la continuidad del esquema farmacológico prescrito y el respaldo constante frente a cualquier contingencia clínica.',
       points: [
         'Certificación sobre diagnóstico y tratamiento.',
         'Corroboración de cobertura de prestación de servicios de salud.',
@@ -23,13 +20,10 @@ export default function MentalHealthWHO() {
     },
     {
       step: '02',
-      title: 'Procesos sicosociales y de educación o reeducación',
-      subtitle: 'Desarrollo de capacidades innatas y adaptación a la vida cotidiana',
+      title: 'Recuperación',
       icon: TrendingUp,
       accent: 'border-l-emerald-600',
       tagColor: 'text-emerald-800 bg-emerald-50 border-emerald-200',
-      description:
-        'Procesos orientados a redescubrir y fortalecer habilidades individuales, promoviendo la autonomía y la participación activa en actividades con propósito.',
       points: [
         'Orientación hacia sus capacidades innatas o aprendidas.',
         'Inducción para la incorporación socio-laboral.',
@@ -38,13 +32,10 @@ export default function MentalHealthWHO() {
     },
     {
       step: '03',
-      title: 'Tender hacia la desaparición de señalamientos',
-      subtitle: 'Erradicación del estigma, derechos humanos y convivencia armónica',
+      title: 'Reencuentro con la sociedad6',
       icon: Users2,
       accent: 'border-l-teal-600',
       tagColor: 'text-teal-800 bg-teal-50 border-teal-200',
-      description:
-        'Fomento de un entorno digno y comunitario cimentado en el afecto mutuo, garantizando el pleno ejercicio de sus derechos y su inclusión en la sociedad.',
       points: [
         'Integración al acontecer social.',
         'Énfasis en derechos humanos, en el amor recíproco y el respeto.',
@@ -53,13 +44,10 @@ export default function MentalHealthWHO() {
     },
     {
       step: '04',
-      title: 'Apoyo del entorno familiar y redes de cuidado',
-      subtitle: 'Capacitación humana, cooperación mutua y respiro al cuidador',
+      title: 'Aportes de la familia y de los custodios de su salud',
       icon: HeartHandshake,
       accent: 'border-l-indigo-600',
       tagColor: 'text-indigo-800 bg-indigo-50 border-indigo-200',
-      description:
-        'Acompañamiento integral que articula al entorno familiar con un equipo capacitado permanente, brindando esquemas de soporte y relevo necesarios.',
       points: [
         'Amparo de tipo económico.',
         'Capacidad y capacitación del personal a cargo.',
