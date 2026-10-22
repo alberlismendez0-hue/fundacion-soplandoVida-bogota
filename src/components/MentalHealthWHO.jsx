@@ -5,62 +5,67 @@ export default function MentalHealthWHO() {
   const stages = [
     {
       step: '01',
-      title: 'Atención Temprana y Continuidad Médica',
-      subtitle: 'Detección, adherencia farmacológica y articulación con el sistema de salud',
+      title: 'Detección en sus primeras fases',
+      subtitle: 'Diagnóstico oportuno, aseguramiento médico y atención ante crisis',
       icon: Stethoscope,
       accent: 'border-l-sky-600',
       tagColor: 'text-sky-800 bg-sky-50 border-sky-200',
       description:
-        'La Organización Mundial de la Salud enfatiza que la estabilidad en procesos psiquiátricos crónicos depende de la adherencia estricta al tratamiento médico, la supervisión de efectos secundarios y el acceso continuo a valoraciones especializadas sin interrupciones.',
+        'La atención integral prioriza la detección temprana, la continuidad del esquema farmacológico prescrito y el respaldo constante frente a cualquier contingencia clínica.',
       points: [
-        'Administración y custodia profesional de medicamentos.',
-        'Prevención oportuna de descompensaciones y crisis.',
-        'Monitoreo clínico y articulación con EPS / IPS tratante.',
+        'Certificación sobre diagnóstico y tratamiento.',
+        'Corroboración de cobertura de prestación de servicios de salud.',
+        'Seguro de salud.',
+        'Apoyo sicosocial.',
+        'Suministro de medicamentos prescritos.',
+        'Atención en caso de crisis u hospitalización.',
       ],
     },
     {
       step: '02',
-      title: 'Recuperación Integral Biopsicosocial',
-      subtitle: 'Procesos psicosociales, hábitos y orientación socio-laboral',
+      title: 'Procesos sicosociales y de educación o reeducación',
+      subtitle: 'Desarrollo de capacidades innatas y adaptación a la vida cotidiana',
       icon: TrendingUp,
       accent: 'border-l-emerald-600',
       tagColor: 'text-emerald-800 bg-emerald-50 border-emerald-200',
       description:
-        'La recuperación va más allá de la ausencia de síntomas. Supone reconstruir la identidad de la persona, sus habilidades de la vida diaria (autocuidado, higiene, rutinas) y actividades con propósito vocacional, físico o lúdico.',
+        'Procesos orientados a redescubrir y fortalecer habilidades individuales, promoviendo la autonomía y la participación activa en actividades con propósito.',
       points: [
-        'Talleres de entrenamiento para la vida cotidiana.',
-        'Estimulación neurocognitiva y psicomotriz activa.',
-        'Desarrollo de proyectos manuales, artísticos y expresivos.',
+        'Orientación hacia sus capacidades innatas o aprendidas.',
+        'Inducción para la incorporación socio-laboral.',
+        'Asistencia según las necesidades del paciente.',
       ],
     },
     {
       step: '03',
-      title: 'Reencuentro con la Sociedad sin Estigma',
-      subtitle: 'Derechos humanos, dignidad, inclusión, amor y respeto irrestricto',
+      title: 'Tender hacia la desaparición de señalamientos',
+      subtitle: 'Erradicación del estigma, derechos humanos y convivencia armónica',
       icon: Users2,
       accent: 'border-l-teal-600',
       tagColor: 'text-teal-800 bg-teal-50 border-teal-200',
       description:
-        'La OMS promueve la superación del aislamiento asilar tradicional. Los hogares protegidos proporcionan una comunidad afectiva donde se restituyen los derechos ciudadanos, promoviendo el respeto mutuo y la convivencia armónica.',
+        'Fomento de un entorno digno y comunitario cimentado en el afecto mutuo, garantizando el pleno ejercicio de sus derechos y su inclusión en la sociedad.',
       points: [
-        'Eliminación del aislamiento y del estigma psiquiátrico.',
-        'Salidas estructuradas y vinculación comunitaria.',
-        'Ambiente de convivencia cimentado en la empatía y la dignidad.',
+        'Integración al acontecer social.',
+        'Énfasis en derechos humanos, en el amor recíproco y el respeto.',
+        'Correcta utilización de los servicios sociales.',
       ],
     },
     {
       step: '04',
-      title: 'Soporte Familiar y Redes de Cuidado',
-      subtitle: 'Contención emocional, psicoeducación y descanso al cuidador',
+      title: 'Apoyo del entorno familiar y redes de cuidado',
+      subtitle: 'Capacitación humana, cooperación mutua y respiro al cuidador',
       icon: HeartHandshake,
       accent: 'border-l-indigo-600',
       tagColor: 'text-indigo-800 bg-indigo-50 border-indigo-200',
       description:
-        'El desgaste del cuidador primario («síndrome de burnout») es una realidad crítica en los hogares. Ofrecemos a las familias un respiro seguro y profesional, complementado con orientación y acompañamiento psicoeducativo.',
+        'Acompañamiento integral que articula al entorno familiar con un equipo capacitado permanente, brindando esquemas de soporte y relevo necesarios.',
       points: [
-        'Descanso real y sosiego emocional para los padres y hermanos.',
-        'Psicoeducación sobre el manejo del diagnóstico en el hogar.',
-        'Visitas programadas que fortalecen el lazo afectivo sano.',
+        'Amparo de tipo económico.',
+        'Capacidad y capacitación del personal a cargo.',
+        'Equipo humano permanente y suficiente.',
+        'Redes de cooperación.',
+        'Provisión de relevo.',
       ],
     },
   ];
@@ -69,8 +74,8 @@ export default function MentalHealthWHO() {
     <section id="enfoque-oms" className="py-14 lg:py-18 bg-slate-50/70 border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
-        {/* Section Header */}
-        <div className="max-w-3xl mb-12">
+        {/* Section Header Centrado */}
+        <div className="max-w-3xl mx-auto text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200/80 text-sky-800 text-xs font-semibold uppercase tracking-wider mb-3 shadow-2xs">
             <Globe2 className="w-3.5 h-3.5 text-sky-600" />
             <span>Lineamientos de la OMS en Salud Mental</span>
@@ -80,13 +85,12 @@ export default function MentalHealthWHO() {
           </h2>
           <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
             Las afecciones de este tipo se consideran un síndrome caracterizado por una alteración clínicamente significativa del 
-            estado cognitivo, la regulación emocional o el comportamiento de un individuo, que refleja una disfunción de los 
-            procesos sicológicos, biológicos o del desarrollo que se presentan en su función mental. La atención ha de orientarse 
-            a los campos.
+            estado cognitivo, la regulación emocional o el comportamiento de un individuo. La atención comunitaria integral ha de orientarse 
+            hacia las siguientes etapas clave.
           </p>
         </div>
 
-        {/* 4 Stages Grid - With Border Accent and Card Depth */}
+        {/* 4 Stages Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-7 mb-10">
           {stages.map((st) => {
             const Icon = st.icon;
@@ -146,7 +150,7 @@ export default function MentalHealthWHO() {
             </h4>
             <p className="text-xs text-slate-600 mt-1 max-w-3xl leading-relaxed">
               La OMS recomienda sustituir los internamientos psiquiátricos prolongados y despersonalizados por 
-              <strong> estructuras residenciales intermedias protegidas</strong> en el entorno comunitario, donde el residente conserve sus rutinas, su dignidad y un entorno afectivo seguro.
+              <strong> estructuras residenciales intermedias protegidas</strong> en el entorno comunitario, donde el residente conserve sus rutinas, su dignidad y un entorno afectivo seguro[cite: 3].
             </p>
           </div>
           <span className="text-xs font-mono text-slate-500 flex-shrink-0 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">
