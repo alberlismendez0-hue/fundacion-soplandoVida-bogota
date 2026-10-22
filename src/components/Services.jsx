@@ -16,7 +16,8 @@ import {
   HeartPulse, 
   Smile, 
   ClipboardCheck, 
-  FileText 
+  FileText,
+  Shirt
 } from 'lucide-react';
 
 export default function Services({ onOpenSchedule }) {
@@ -26,22 +27,29 @@ export default function Services({ onOpenSchedule }) {
     {
       title: 'Alojamiento en infraestructura propia',
       desc: 'Habitaciones confortables, ventiladas y seguras en un predio adaptado especialmente para la tranquilidad y movilidad de los residentes en Bogotá.',
+      icon: Building2,
+      accent: 'text-sky-700 bg-sky-50 border-sky-100',
     },
     {
       title: 'Nutrición y alimentación balanceada',
       desc: 'Alimentación planificada según requerimientos médicos y esquemas farmacológicos de cada residente.',
+      icon: Utensils,
+      accent: 'text-emerald-700 bg-emerald-50 border-emerald-100',
     },
     {
       title: 'Servicios de lavandería',
       desc: 'Cuidado diario de prendas de vestir y lencería con rigurosos estándares de higiene personal.',
+      icon: Shirt,
+      accent: 'text-teal-700 bg-teal-50 border-teal-100',
     },
     {
       title: 'Limpieza y mantenimiento permanente',
       desc: 'Zonas comunes, comedores y áreas de descanso permanentemente atendidas para garantizar un entorno seguro y digno.',
+      icon: Sparkles,
+      accent: 'text-blue-700 bg-blue-50 border-blue-100',
     },
   ];
 
-  // Los 12 servicios terapéuticos exactos del brochure oficial
   const medicalTherapeuticServices = [
     {
       title: 'Seguimiento y acompañamiento interdisciplinario',
@@ -128,11 +136,11 @@ export default function Services({ onOpenSchedule }) {
             <span>Modelos de Atención Integral</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Servicios y Modalidades de Cuidado
+            Servicios y Modalidades de Cuidado[cite: 4]
           </h2>
           <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
             Combinamos la calidez de un auténtico hogar con el rigor de un equipo interdisciplinario 
-            especializado en el seguimiento, rehabilitación y mantenimiento integral del paciente crónico.
+            especializado en el seguimiento, rehabilitación y mantenimiento integral del paciente crónico[cite: 2, 4].
           </p>
         </div>
 
@@ -147,7 +155,7 @@ export default function Services({ onOpenSchedule }) {
             }`}
           >
             <Stethoscope className={`w-4 h-4 ${activeCategory === 'terapeuticos' ? 'text-sky-300' : 'text-slate-500'}`} />
-            <span>Servicios Terapéuticos (12 Áreas)</span>
+            <span>Servicios Terapéuticos (12 Áreas)</span>[cite: 4]
           </button>
 
           <button
@@ -159,7 +167,7 @@ export default function Services({ onOpenSchedule }) {
             }`}
           >
             <Building2 className={`w-4 h-4 ${activeCategory === 'residenciales' ? 'text-emerald-300' : 'text-slate-500'}`} />
-            <span>Servicios Logísticos y Residenciales</span>
+            <span>Servicios Logísticos y Residenciales</span>[cite: 4]
           </button>
         </div>
 
@@ -171,26 +179,26 @@ export default function Services({ onOpenSchedule }) {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-7">
                   <span className="text-xs font-bold text-sky-800 uppercase tracking-wider block mb-2">
-                    Acompañamiento Interdisciplinario Continuo
+                    Acompañamiento Interdisciplinario Continuo[cite: 2, 4]
                   </span>
                   <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">
-                    Rehabilitación, Contención y Desarrollo Humano
+                    Rehabilitación, Contención y Desarrollo Humano[cite: 2, 4]
                   </h3>
                   <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-5">
-                    Nuestro equipo interdisciplinario (Psiquiatría, Psicología, Terapia Ocupacional, Enfermería y Apoyo Espiritual) trabaja de forma articulada para brindar un apoyo constante frente al mantenimiento de la calidad de vida y estabilidad emocional.
+                    Nuestro equipo interdisciplinario (Psiquiatría, Psicología, Terapia Ocupacional, Enfermería y Apoyo Espiritual) trabaja de forma articulada para brindar un apoyo constante frente al mantenimiento de la calidad de vida y estabilidad emocional[cite: 2, 3, 4].
                   </p>
                   <div className="flex flex-wrap gap-2.5 text-xs text-slate-700 font-medium">
                     <span className="bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs flex items-center gap-1.5">
                       <Clock className="w-3.5 h-3.5 text-sky-700" />
-                      Enfermería Permanente
+                      Enfermería Permanente[cite: 2, 4]
                     </span>
                     <span className="bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs flex items-center gap-1.5">
                       <Brain className="w-3.5 h-3.5 text-emerald-700" />
-                      Apoyo Psiquiátrico & Psicológico
+                      Apoyo Psiquiátrico & Psicológico[cite: 2, 4]
                     </span>
                     <span className="bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs flex items-center gap-1.5">
                       <HeartHandshake className="w-3.5 h-3.5 text-teal-700" />
-                      Acompañamiento a Familias
+                      Acompañamiento a Familias[cite: 2, 3, 4]
                     </span>
                   </div>
                 </div>
@@ -220,10 +228,10 @@ export default function Services({ onOpenSchedule }) {
                         <Icon className="w-5 h-5" />
                       </div>
                       <h4 className="font-bold text-slate-900 text-sm mb-1.5">
-                        {srv.title}
+                        {srv.title}[cite: 4]
                       </h4>
                       <p className="text-slate-600 text-xs leading-relaxed">
-                        {srv.desc}
+                        {srv.desc}[cite: 4]
                       </p>
                     </div>
                   </div>
@@ -241,22 +249,22 @@ export default function Services({ onOpenSchedule }) {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-7">
                   <span className="text-xs font-bold text-emerald-800 uppercase tracking-wider block mb-2">
-                    Comodidad, Nutrición y Convivencia
+                    Comodidad, Nutrición y Convivencia[cite: 4]
                   </span>
                   <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">
-                    Un Verdadero Hogar: Calidez, Cuidados y Serenidad
+                    Un Verdadero Hogar: Calidez, Cuidados y Serenidad[cite: 2, 4]
                   </h3>
                   <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-5">
-                    Nuestras instalaciones cuentan con infraestructura propia conformada por distintas áreas (comedor, salas de estar, habitaciones y espacios recreativos) diseñadas con las comodidades y el personal idóneo para albergar dignamente a quienes necesitan de nuestro apoyo.
+                    Nuestras instalaciones cuentan con infraestructura propia conformada por distintas áreas (comedor, salas de estar, habitaciones y espacios recreativos) diseñadas con las comodidades y el personal idóneo para albergar dignamente a quienes necesitan de nuestro apoyo[cite: 3, 4].
                   </p>
                   <div className="flex flex-wrap gap-2.5 text-xs text-slate-700 font-medium">
                     <span className="bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs flex items-center gap-1.5">
                       <Utensils className="w-3.5 h-3.5 text-emerald-700" />
-                      Alimentación Balanceada
+                      Alimentación Balanceada[cite: 4]
                     </span>
                     <span className="bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs flex items-center gap-1.5">
                       <ShieldCheck className="w-3.5 h-3.5 text-sky-700" />
-                      Infraestructura Propia en Bogotá
+                      Infraestructura Propia en Bogotá[cite: 4]
                     </span>
                   </div>
                 </div>
@@ -272,23 +280,29 @@ export default function Services({ onOpenSchedule }) {
               </div>
             </div>
 
-            {/* Grid de Servicios Residenciales */}
+            {/* Grid de Servicios Residenciales con Iconos */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-              {residentialServices.map((srv, idx) => (
-                <div
-                  key={idx}
-                  className="bg-white hover:bg-slate-50/70 rounded-2xl p-5 border border-slate-200/90 shadow-2xs hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
-                >
-                  <div>
-                    <h4 className="font-bold text-slate-900 text-sm mb-2">
-                      {srv.title}
-                    </h4>
-                    <p className="text-slate-600 text-xs leading-relaxed">
-                      {srv.desc}
-                    </p>
+              {residentialServices.map((srv, idx) => {
+                const Icon = srv.icon;
+                return (
+                  <div
+                    key={idx}
+                    className="bg-white hover:bg-slate-50/70 rounded-2xl p-5 border border-slate-200/90 shadow-2xs hover:shadow-md transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className={`w-10 h-10 rounded-xl flex items-center justify-center border mb-3.5 ${srv.accent}`}>
+                        <Icon className="w-5 h-5" />
+                      </div>
+                      <h4 className="font-bold text-slate-900 text-sm mb-2">
+                        {srv.title}[cite: 4]
+                      </h4>
+                      <p className="text-slate-600 text-xs leading-relaxed">
+                        {srv.desc}[cite: 4]
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         )}
@@ -298,13 +312,13 @@ export default function Services({ onOpenSchedule }) {
           <div>
             <div className="inline-flex items-center gap-2 text-xs font-semibold text-sky-300 uppercase tracking-wider mb-1.5">
               <Calendar className="w-3.5 h-3.5" />
-              <span>Visitas Guiadas a Nuestras Instalaciones</span>
+              <span>Visitas Guiadas a Nuestras Instalaciones</span>[cite: 4]
             </div>
             <h4 className="text-base sm:text-lg font-bold text-white">
-              ¿Deseas conocer la sede y orientarte con el equipo profesional?
+              ¿Deseas conocer la sede y orientarte con el equipo profesional?[cite: 4]
             </h4>
             <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl leading-relaxed">
-              Coordinamos visitas presenciales para evaluar el perfil del usuario y resolver cualquier inquietud familiar con total discreción y calidez.
+              Coordinamos visitas presenciales para evaluar el perfil del usuario y resolver cualquier inquietud familiar con total discreción y calidez[cite: 2, 4].
             </p>
           </div>
           <button
