@@ -79,8 +79,10 @@ export default function MentalHealthWHO() {
             Orientación en Salud Mental Comunitaria
           </h2>
           <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
-            Adoptamos las directrices de la Organización Mundial de la Salud (OMS) para la atención integral 
-            en salud mental, reemplazando el viejo paradigma del asilo por un modelo de <strong>Hogar Protegido</strong> centrado en la persona.
+            Las afecciones de este tipo se consideran un síndrome caracterizado por una alteración clínicamente significativa del 
+            estado cognitivo, la regulación emocional o el comportamiento de un individuo, que refleja una disfunción de los 
+            procesos sicológicos, biológicos o del desarrollo que se presentan en su función mental. La atención ha de orientarse 
+            a los campos.
           </p>
         </div>
 
