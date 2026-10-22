@@ -2,42 +2,65 @@ import React from 'react';
 
 export default function Logo({ className = "h-11", showSubtext = true, lightMode = false }) {
   return (
-    <div className={`flex items-center gap-3 select-none ${className}`}>
-      {/* Stylized Spiral of Life Symbol */}
+    <div className={`flex items-center gap-3.5 select-none ${className}`}>
+      {/* Official Aerodynamic Life Spiral Isotype */}
       <div className="relative w-11 h-11 flex-shrink-0 flex items-center justify-center">
-        <div className="absolute inset-0 bg-gradient-to-tr from-sky-500/20 to-emerald-400/20 rounded-2xl transform rotate-6 scale-95 transition-transform group-hover:rotate-12"></div>
+        {/* Subtle glow backdrop */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-sky-400/20 via-emerald-400/20 to-amber-300/20 rounded-2xl transform rotate-6 scale-95 transition-transform duration-300 group-hover:rotate-12"></div>
+        
         <svg
-          viewBox="0 0 48 48"
+          viewBox="0 0 54 54"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-10 h-10 relative z-10 drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
+          className="w-10 h-10 relative z-10 drop-shadow-xs transition-transform duration-300 group-hover:scale-105"
         >
           <defs>
-            <linearGradient id="logoSkyGrad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#0EA5E9" />
-              <stop offset="1" stopColor="#0284C7" />
+            {/* Cerulean Blue Spiral Gradient */}
+            <linearGradient id="logoBlueGrad" x1="6" y1="6" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#0284C7" />
+              <stop offset="0.6" stopColor="#0EA5E9" />
+              <stop offset="1" stopColor="#38BDF8" />
             </linearGradient>
-            <linearGradient id="logoMintGrad" x1="44" y1="44" x2="14" y2="20" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#34D399" />
+
+            {/* Lime / Mint Green Gradient */}
+            <linearGradient id="logoGreenGrad" x1="48" y1="48" x2="16" y2="24" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#84CC16" />
+              <stop offset="0.5" stopColor="#10B981" />
               <stop offset="1" stopColor="#059669" />
             </linearGradient>
+
+            {/* Subtle Yellow / Golden Sunrise Accent */}
+            <linearGradient id="logoGoldGrad" x1="20" y1="12" x2="36" y2="28" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#FBBF24" />
+              <stop offset="1" stopColor="#F59E0B" />
+            </linearGradient>
           </defs>
-          {/* Main outer breath swirl */}
+
+          {/* Aerodynamic outer spiral arm (Blue) */}
           <path
-            d="M24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42C33.9411 42 42 33.9411 42 24C42 16.5 36.5 11 29 11C21.5 11 16 16.5 16 23.5C16 29.5 20.5 34 26 34C30.5 34 34 30.5 34 26C34 22.5 31 20 28 20"
-            stroke="url(#logoSkyGrad)"
-            strokeWidth="3.6"
+            d="M27 6C15.402 6 6 15.402 6 27C6 38.598 15.402 48 27 48C38.598 48 48 38.598 48 27C48 18.2 41.5 11.5 32.5 11.5C23.5 11.5 17 18.5 17 26.5C17 33.5 22.5 38.5 29 38.5C34.5 38.5 38.5 34.5 38.5 29.5C38.5 25.5 35 22.5 31.5 22.5"
+            stroke="url(#logoBlueGrad)"
+            strokeWidth="3.8"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          {/* Inner hopeful sprout / breath accent */}
+
+          {/* Inner energetic breath arm (Lime Green) */}
           <path
-            d="M25 18C28 16 32 17 33 21C34 24 32.5 28 29 29.5"
-            stroke="url(#logoMintGrad)"
+            d="M27 19C32 17 37 18.5 38.5 23.5C39.5 27 37.5 31 33.5 32.5C30 33.8 26 32 24.5 28.5"
+            stroke="url(#logoGreenGrad)"
             strokeWidth="3.2"
             strokeLinecap="round"
           />
-          <circle cx="27" cy="25" r="2.5" fill="#10B981" />
+
+          {/* Golden breath spark (Subtle yellow accent) */}
+          <circle cx="29" cy="27" r="3" fill="url(#logoGoldGrad)" />
+          <path
+            d="M23 15C25 12 28 11.5 30 13"
+            stroke="url(#logoGoldGrad)"
+            strokeWidth="2.4"
+            strokeLinecap="round"
+          />
         </svg>
       </div>
 
@@ -49,12 +72,12 @@ export default function Logo({ className = "h-11", showSubtext = true, lightMode
           }`}
           style={{ fontFamily: "'Outfit', sans-serif" }}
         >
-          SOPLANDO <span className="text-sky-600 font-extrabold">VIDA</span>
+          SOPLANDO <span className="text-sky-700 font-extrabold">VIDA</span>
         </span>
         {showSubtext && (
           <span
-            className={`text-[10.5px] font-medium tracking-wide uppercase ${
-              lightMode ? 'text-sky-100/90' : 'text-slate-500'
+            className={`text-[10px] sm:text-[10.5px] font-semibold tracking-wider uppercase ${
+              lightMode ? 'text-sky-200' : 'text-slate-500'
             }`}
           >
             Hogar Protegido &bull; Fundación Social

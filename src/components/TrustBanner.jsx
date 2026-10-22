@@ -1,82 +1,109 @@
 import React from 'react';
-import { ShieldCheck, HeartHandshake, Sparkles, Building2 } from 'lucide-react';
+import { ShieldCheck, Heart, Stethoscope, Clock, MessageCircle, Sparkles } from 'lucide-react';
 
-export default function TrustBanner() {
+export default function TrustBanner({ onOpenSchedule }) {
+  const trustItems = [
+    {
+      icon: ShieldCheck,
+      title: 'Respaldo Institucional',
+      detail: 'Entidad sin ánimo de lucro · NIT: 900.942.377-8 · Cámara de Comercio de Bogotá',
+    },
+    {
+      icon: Stethoscope,
+      title: 'Seguimiento Psiquiátrico',
+      detail: 'Articulación permanente con médicos tratantes y supervisión de esquemas clínicos',
+    },
+    {
+      icon: Clock,
+      title: 'Enfermería Permanente 24/7',
+      detail: 'Custodia rigurosa de medicamentos y respuesta asistencial continua día y noche',
+    },
+    {
+      icon: Heart,
+      title: 'Sede Propia y Calor de Hogar',
+      detail: 'Infraestructura segura, jardines interiores y un ambiente de convivencia sin estigma',
+    },
+  ];
+
   return (
-    <div className="relative bg-gradient-to-br from-slate-950 via-sky-950 to-slate-900 text-white overflow-hidden">
-      
-      {/* 1. Curva fluida superior: une la sección anterior blanca con el fondo oscuro */}
-      <div className="w-full overflow-hidden leading-none pointer-events-none -mt-px">
-        <svg 
-          className="relative block w-full h-8 sm:h-12 md:h-16 text-white fill-current" 
-          viewBox="0 0 1200 120" 
-          preserveAspectRatio="none"
-        >
-          <path d="M0,0 C320,80 750,15 1200,65 L1200,0 L0,0 Z" />
-        </svg>
-      </div>
+    <section className="bg-gradient-to-r from-slate-950 via-sky-950 to-slate-900 text-white py-12 lg:py-16 relative overflow-hidden shadow-inner">
+      {/* Subtle atmospheric ambient glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-sky-600/10 blur-[90px] pointer-events-none rounded-full" />
 
-      {/* Halo de luz sutil en el centro para dar volumen y profundidad */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[320px] bg-sky-500/15 rounded-full blur-3xl pointer-events-none" />
-
-      {/* Contenido Central */}
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-12 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
-        {/* Badge superior */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-900/70 border border-sky-400/30 text-sky-300 text-xs font-semibold uppercase tracking-wider mb-5 shadow-xs">
-          <Sparkles className="w-3.5 h-3.5 text-sky-400" />
-          <span>Compromiso Ético, Clínico y Humano</span>
-        </div>
+        {/* Core Slogan & Spiritual Foundation */}
+        <div className="text-center max-w-4xl mx-auto mb-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/80 text-sky-300 text-xs font-semibold uppercase tracking-wider mb-3.5">
+            <Sparkles className="w-3.5 h-3.5 text-sky-400" />
+            <span>Compromiso Asistencial y Vocación de Servicio</span>
+          </div>
 
-        {/* Lema central oficial */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-tight max-w-3xl mx-auto mb-3">
-          «Pensando en el ser humano que hay detrás del diagnóstico»
-        </h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight leading-snug">
+            «Pensando en el ser humano que hay detrás del diagnóstico»
+          </h2>
 
-        {/* Sublema */}
-        <p className="text-emerald-400 font-semibold text-base sm:text-lg mb-6">
-          ¡Lo que somos, lo somos por ti!
-        </p>
-
-        {/* Tarjeta de la cita bíblica translúcida */}
-        <div className="max-w-2xl mx-auto bg-white/10 border border-white/15 rounded-2xl p-5 backdrop-blur-md mb-8 shadow-inner">
-          <p className="text-sm sm:text-base text-slate-200 italic leading-relaxed">
-            "Ven de los cuatro vientos, oh aliento de vida, y sopla sobre estos cuerpos para que revivan y se pongan en pie."
+          <p className="mt-2 text-base sm:text-lg font-bold text-emerald-400">
+            ¡Lo que somos, lo somos por ti!
           </p>
-          <span className="block mt-2 text-xs font-bold text-sky-300 tracking-wider uppercase">
-            Ezequiel 37:9 &bull; Fundación Social Soplando Vida
-          </span>
+
+          <p className="mt-3.5 text-xs sm:text-sm text-slate-300 italic max-w-2xl mx-auto font-serif leading-relaxed">
+            «Ven de los cuatro vientos, oh aliento de vida, y sopla sobre estos cuerpos para que revivan y se pongan en pie.»
+            <span className="block mt-1 font-sans not-italic text-[10.5px] font-bold text-sky-400 uppercase tracking-widest">
+              — Ezequiel 37:9 (Inspiración de Soplando Vida)
+            </span>
+          </p>
         </div>
 
-        {/* 3 Pilares en tarjetas oscuras con acento */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-white/10 text-xs sm:text-sm text-slate-300">
-          <div className="flex items-center justify-center gap-2 bg-white/5 border border-white/10 rounded-xl py-3 px-4 backdrop-blur-xs">
-            <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-            <span>NIT: 900.942.377-8 (Cámara de Comercio Bogotá)</span>
-          </div>
-          <div className="flex items-center justify-center gap-2 bg-white/5 border border-white/10 rounded-xl py-3 px-4 backdrop-blur-xs">
-            <HeartHandshake className="w-4 h-4 text-sky-400 shrink-0" />
-            <span>Acompañamiento Biopsicosocial 24/7</span>
-          </div>
-          <div className="flex items-center justify-center gap-2 bg-white/5 border border-white/10 rounded-xl py-3 px-4 backdrop-blur-xs">
-            <Building2 className="w-4 h-4 text-teal-400 shrink-0" />
-            <span>Sede Propia y Espacios Dignos</span>
+        {/* 4 Pillars of Institutional Trust */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-8 border-t border-slate-800">
+          {trustItems.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={idx}
+                className="bg-slate-900/80 hover:bg-slate-900 rounded-2xl p-5 border border-slate-800 hover:border-sky-800/80 transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-9 h-9 rounded-xl bg-sky-950 text-sky-400 flex items-center justify-center mb-3 border border-sky-800/60">
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <h3 className="text-sm font-bold text-white mb-1.5">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-slate-300 leading-relaxed">
+                    {item.detail}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Quick Contact Banner Action */}
+        <div className="mt-10 pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+          <span>Sede Bogotá: Cra 72 Bis No. 75 A-35 &bull; Tel: (601) 621 4798</span>
+          
+          <div className="flex items-center gap-3">
+            <button
+              onClick={onOpenSchedule}
+              className="px-4 py-2 rounded-xl bg-sky-700 hover:bg-sky-600 text-white font-semibold transition-all shadow-xs cursor-pointer hover:-translate-y-0.5"
+            >
+              Agendar Visita
+            </button>
+            <a
+              href="https://wa.me/573208554452?text=Hola,%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20el%20Hogar%20Protegido%20Soplando%20Vida"
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold transition-all shadow-xs inline-flex items-center gap-1.5 cursor-pointer hover:-translate-y-0.5"
+            >
+              <MessageCircle className="w-3.5 h-3.5" />
+              <span>WhatsApp 320 855 4452</span>
+            </a>
           </div>
         </div>
 
       </div>
-
-      {/* 2. Curva fluida inferior: une el fondo oscuro con la siguiente sección clara */}
-      <div className="w-full overflow-hidden leading-none pointer-events-none -mb-px">
-        <svg 
-          className="relative block w-full h-8 sm:h-12 md:h-16 text-slate-50 fill-current" 
-          viewBox="0 0 1200 120" 
-          preserveAspectRatio="none"
-        >
-          <path d="M0,60 C380,110 820,10 1200,65 L1200,120 L0,120 Z" />
-        </svg>
-      </div>
-
-    </div>
+    </section>
   );
 }

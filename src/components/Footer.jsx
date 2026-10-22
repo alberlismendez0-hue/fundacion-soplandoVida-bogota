@@ -16,22 +16,22 @@ export default function Footer({ onOpenSchedule }) {
   };
 
   return (
-    <footer className="bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <footer className="bg-slate-950 text-slate-300 pt-14 pb-10 border-t border-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 pb-10 border-b border-slate-800">
           
           {/* Col 1: Identity & Legal (5 cols) */}
           <div className="lg:col-span-5 flex flex-col items-start">
             <Logo lightMode={true} />
             
             <p className="mt-4 text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
-              Hogar protegido especializado en el cuidado, rehabilitación y acompañamiento biopsicosocial 
-              del paciente psiquiátrico crónico. Brindamos un entorno seguro, profesional y con calor de hogar en Bogotá.
+              Hogar protegido especializado en el cuidado, rehabilitación psicosocial y acompañamiento 
+              integral. Brindamos un entorno seguro, profesional y con calor de hogar en Bogotá.
             </p>
 
-            <div className="mt-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs text-slate-300 font-medium">
+            <div className="mt-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
               <span>NIT: 900.942.377-8 &bull; Bogotá, Colombia</span>
             </div>
@@ -39,7 +39,7 @@ export default function Footer({ onOpenSchedule }) {
             <div className="mt-6 flex items-center gap-3">
               <button
                 onClick={onOpenSchedule}
-                className="px-4 py-2 rounded-lg bg-sky-800 hover:bg-sky-700 text-white text-xs font-semibold transition-colors cursor-pointer"
+                className="px-4 py-2 rounded-xl bg-sky-800 hover:bg-sky-700 text-white text-xs font-semibold transition-all shadow-xs cursor-pointer hover:-translate-y-0.5"
               >
                 Agendar Visita
               </button>
@@ -47,7 +47,7 @@ export default function Footer({ onOpenSchedule }) {
                 href="https://wa.me/573208554452?text=Hola,%20deseo%20comunicarme%20con%20el%20Hogar%20Protegido%20Soplando%20Vida"
                 target="_blank"
                 rel="noreferrer"
-                className="px-4 py-2 rounded-lg border border-slate-700 hover:bg-slate-800 text-slate-200 text-xs font-medium transition-colors inline-flex items-center gap-1.5"
+                className="px-4 py-2 rounded-xl border border-slate-700 hover:bg-slate-900 text-slate-200 text-xs font-medium transition-all inline-flex items-center gap-1.5 cursor-pointer hover:-translate-y-0.5"
               >
                 <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
                 <span>WhatsApp Oficial</span>
@@ -60,12 +60,9 @@ export default function Footer({ onOpenSchedule }) {
             <h4 className="text-white text-xs font-bold uppercase tracking-wider mb-4">
               Navegación Institucional
             </h4>
-            <ul className="space-y-2 text-xs sm:text-sm">
+            <ul className="space-y-2.5 text-xs sm:text-sm">
               <li>
                 <a href="#inicio" className="text-slate-400 hover:text-white transition-colors">Inicio</a>
-              </li>
-              <li>
-                <a href="#condiciones" className="text-slate-400 hover:text-white transition-colors">Condiciones que acompañamos</a>
               </li>
               <li>
                 <a href="#quienes-somos" className="text-slate-400 hover:text-white transition-colors">Quiénes Somos (Misión / Visión)</a>
@@ -120,9 +117,9 @@ export default function Footer({ onOpenSchedule }) {
                   soplandovidafs@gmail.com
                 </a>
               </li>
-              <li className="flex items-start gap-2.5 text-xs text-slate-400 pt-2 border-t border-slate-800">
+              <li className="flex items-start gap-2.5 text-xs text-slate-400 pt-2 border-t border-slate-900">
                 <Clock className="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5" />
-                <span>Horario de Atención Administrativa y Visitas: Lunes a Sábado de 8:00 AM a 5:30 PM</span>
+                <span>Horario de Atención y Visitas: Lunes a Sábado de 8:00 AM a 5:30 PM</span>
               </li>
             </ul>
           </div>
@@ -130,7 +127,7 @@ export default function Footer({ onOpenSchedule }) {
         </div>
 
         {/* Bottom Bar: Copyright & Back to top */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>
             &copy; {new Date().getFullYear()} <strong>Hogar Protegido SOPLANDO VIDA - Fundación Social</strong>. Todos los derechos reservados.
           </p>

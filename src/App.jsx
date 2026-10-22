@@ -24,38 +24,38 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-white text-slate-800 antialiased selection:bg-slate-800 selection:text-white">
-      {/* 1. Slim, Light Top Navbar */}
+    <div className="min-h-screen flex flex-col bg-white text-slate-800 antialiased selection:bg-sky-800 selection:text-white">
+      {/* 1. Thin Top Bar & Navbar */}
       <Navbar onOpenSchedule={handleOpenSchedule} />
 
-      {/* Main Page Flow with Organic Alternating Rhythm */}
+      {/* Main Page Flow with Volume, Contrast & Hermetic Spacing */}
       <main className="flex-grow">
-        {/* A. Hero Section */}
+        {/* 2. Hero Section (Luminous, Brand Ambience, Clean Photography) */}
         <Hero onOpenSchedule={handleOpenSchedule} />
 
-        {/* C. Quiénes Somos */}
+        {/* 3. Quiénes Somos (Misión, Visión, Calidad in Dynamic Tabs) */}
         <AboutUs onOpenSchedule={handleOpenSchedule} />
 
-        {/* D. Cintillo Intermedio de Valor, Autoridad y Fe */}
+        {/* 4. Cintillo Intermedio de Autoridad y Fe (Deep Navy from-slate-950 via-sky-950) */}
         <TrustBanner onOpenSchedule={handleOpenSchedule} />
 
-        {/* E. 6 Objetivos Institucionales */}
+        {/* 5. Nuestros 6 Objetivos Institucionales (Relief Cards & Color Accents) */}
         <Objectives />
 
-        {/* F. Servicios y Modalidades */}
+        {/* 6. Servicios y Modalidades de Cuidado (Logísticos & Médicos) */}
         <Services onOpenSchedule={handleOpenSchedule} />
 
-        {/* G. Orientación OMS en Salud Mental */}
+        {/* 7. Orientación en Salud Mental Comunitaria (Lineamientos OMS) */}
         <MentalHealthWHO />
 
-        {/* H. Testimonios y Citas de Fe */}
+        {/* 8. Testimonios y Citas Inspiracionales (Warm Gradient & Faith Quotes) */}
         <Testimonials />
 
-        {/* I. Contacto y Ubicación */}
+        {/* 9. Contacto, Ubicación y Formulario (1-Click Copy & Google Maps) */}
         <ContactSection />
       </main>
 
-      {/* J. Footer */}
+      {/* 10. Footer Institucional */}
       <Footer onOpenSchedule={handleOpenSchedule} />
 
       {/* Persistent Discrete Floating WhatsApp Button */}
