@@ -1,23 +1,14 @@
 import React from 'react';
 
-export default function WaveDivider({ 
-  fillColor = "#F8FAFC", 
-  flip = false,
-  className = "" 
-}) {
+export default function WaveDivider({ fromColor = 'bg-white', toColor = 'text-slate-50', flip = false }) {
   return (
-    <div className={`w-full overflow-hidden leading-none pointer-events-none select-none ${className}`}>
-      <svg
-        viewBox="0 0 1200 64"
+    <div className={`w-full overflow-hidden leading-none ${fromColor} ${flip ? 'rotate-180' : ''} -my-px`}>
+      <svg 
+        className={`relative block w-full h-6 sm:h-10 ${toColor} fill-current`} 
+        viewBox="0 0 1200 120" 
         preserveAspectRatio="none"
-        className={`w-full h-8 sm:h-12 lg:h-14 block ${flip ? 'rotate-180' : ''}`}
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M0 0 C300 45, 600 64, 900 35 C1050 20, 1150 40, 1200 48 L1200 64 L0 64 Z"
-          fill={fillColor}
-        />
+        <path d="M0,0 C150,90 350,-40 500,45 C650,130 900,10 1200,40 L1200,120 L0,120 Z" />
       </svg>
     </div>
   );
