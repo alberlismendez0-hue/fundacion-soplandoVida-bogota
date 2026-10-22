@@ -132,7 +132,7 @@ export default function Services({ onOpenSchedule }) {
           </h2>
           <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
             Combinamos la calidez de un auténtico hogar con el rigor de un equipo interdisciplinario 
-            especializado en el seguimiento, rehabilitación y mantenimiento integral del paciente crónico[cite: 2, 4].
+            especializado en el seguimiento, rehabilitación y mantenimiento integral del paciente crónico.
           </p>
         </div>
 
@@ -147,7 +147,7 @@ export default function Services({ onOpenSchedule }) {
             }`}
           >
             <Stethoscope className={`w-4 h-4 ${activeCategory === 'terapeuticos' ? 'text-sky-300' : 'text-slate-500'}`} />
-            <span>Servicios Terapéuticos (12 Áreas)</span>[cite: 4]
+            <span>Servicios Terapéuticos (12 Áreas)</span>
           </button>
 
           <button
@@ -159,7 +159,7 @@ export default function Services({ onOpenSchedule }) {
             }`}
           >
             <Building2 className={`w-4 h-4 ${activeCategory === 'residenciales' ? 'text-emerald-300' : 'text-slate-500'}`} />
-            <span>Servicios Logísticos y Residenciales</span>[cite: 4]
+            <span>Servicios Logísticos y Residenciales</span>
           </button>
         </div>
 
@@ -171,26 +171,26 @@ export default function Services({ onOpenSchedule }) {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-7">
                   <span className="text-xs font-bold text-sky-800 uppercase tracking-wider block mb-2">
-                    Acompañamiento Interdisciplinario Continuo[cite: 2, 4]
+                    Acompañamiento Interdisciplinario Continuo
                   </span>
                   <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">
-                    Rehabilitación, Contención y Desarrollo Humano[cite: 2, 4]
+                    Rehabilitación, Contención y Desarrollo Humano
                   </h3>
                   <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-5">
-                    Nuestro equipo interdisciplinario (Psiquiatría, Psicología, Terapia Ocupacional, Enfermería y Apoyo Espiritual) trabaja de forma articulada para brindar un apoyo constante frente al mantenimiento de la calidad de vida y estabilidad emocional[cite: 2, 3, 4].
+                    Nuestro equipo interdisciplinario (Psiquiatría, Psicología, Terapia Ocupacional, Enfermería y Apoyo Espiritual) trabaja de forma articulada para brindar un apoyo constante frente al mantenimiento de la calidad de vida y estabilidad emocional.
                   </p>
                   <div className="flex flex-wrap gap-2.5 text-xs text-slate-700 font-medium">
                     <span className="bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs flex items-center gap-1.5">
                       <Clock className="w-3.5 h-3.5 text-sky-700" />
-                      Enfermería Permanente[cite: 2, 4]
+                      Enfermería Permanente
                     </span>
                     <span className="bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs flex items-center gap-1.5">
                       <Brain className="w-3.5 h-3.5 text-emerald-700" />
-                      Apoyo Psiquiátrico & Psicológico[cite: 2, 4]
+                      Apoyo Psiquiátrico & Psicológico
                     </span>
                     <span className="bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs flex items-center gap-1.5">
                       <HeartHandshake className="w-3.5 h-3.5 text-teal-700" />
-                      Acompañamiento a Familias[cite: 2, 3, 4]
+                      Acompañamiento a Familias
                     </span>
                   </div>
                 </div>
@@ -220,10 +220,10 @@ export default function Services({ onOpenSchedule }) {
                         <Icon className="w-5 h-5" />
                       </div>
                       <h4 className="font-bold text-slate-900 text-sm mb-1.5">
-                        {srv.title}[cite: 4]
+                        {srv.title}
                       </h4>
                       <p className="text-slate-600 text-xs leading-relaxed">
-                        {srv.desc}[cite: 4]
+                        {srv.desc}
                       </p>
                     </div>
                   </div>
@@ -241,22 +241,22 @@ export default function Services({ onOpenSchedule }) {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-7">
                   <span className="text-xs font-bold text-emerald-800 uppercase tracking-wider block mb-2">
-                    Comodidad, Nutrición y Convivencia[cite: 4]
+                    Comodidad, Nutrición y Convivencia
                   </span>
                   <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">
-                    Un Verdadero Hogar: Calidez, Cuidados y Serenidad[cite: 2, 4]
+                    Un Verdadero Hogar: Calidez, Cuidados y Serenidad
                   </h3>
                   <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-5">
-                    Nuestras instalaciones cuentan con infraestructura propia conformada por distintas áreas (comedor, salas de estar, habitaciones y espacios recreativos) diseñadas con las comodidades y el personal idóneo para albergar dignamente a quienes necesitan de nuestro apoyo[cite: 3, 4].
+                    Nuestras instalaciones cuentan con infraestructura propia conformada por distintas áreas (comedor, salas de estar, habitaciones y espacios recreativos) diseñadas con las comodidades y el personal idóneo para albergar dignamente a quienes necesitan de nuestro apoyo.
                   </p>
                   <div className="flex flex-wrap gap-2.5 text-xs text-slate-700 font-medium">
                     <span className="bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs flex items-center gap-1.5">
                       <Utensils className="w-3.5 h-3.5 text-emerald-700" />
-                      Alimentación Balanceada[cite: 4]
+                      Alimentación Balanceada
                     </span>
                     <span className="bg-white px-3 py-1.5 rounded-xl border border-slate-200 shadow-2xs flex items-center gap-1.5">
                       <ShieldCheck className="w-3.5 h-3.5 text-sky-700" />
-                      Infraestructura Propia en Bogotá[cite: 4]
+                      Infraestructura Propia en Bogotá
                     </span>
                   </div>
                 </div>
@@ -281,10 +281,10 @@ export default function Services({ onOpenSchedule }) {
                 >
                   <div>
                     <h4 className="font-bold text-slate-900 text-sm mb-2">
-                      {srv.title}[cite: 4]
+                      {srv.title}
                     </h4>
                     <p className="text-slate-600 text-xs leading-relaxed">
-                      {srv.desc}[cite: 4]
+                      {srv.desc}
                     </p>
                   </div>
                 </div>
@@ -298,13 +298,13 @@ export default function Services({ onOpenSchedule }) {
           <div>
             <div className="inline-flex items-center gap-2 text-xs font-semibold text-sky-300 uppercase tracking-wider mb-1.5">
               <Calendar className="w-3.5 h-3.5" />
-              <span>Visitas Guiadas a Nuestras Instalaciones</span>[cite: 4]
+              <span>Visitas Guiadas a Nuestras Instalaciones</span>
             </div>
             <h4 className="text-base sm:text-lg font-bold text-white">
-              ¿Deseas conocer la sede y orientarte con el equipo profesional?[cite: 4]
+              ¿Deseas conocer la sede y orientarte con el equipo profesional?
             </h4>
             <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl leading-relaxed">
-              Coordinamos visitas presenciales para evaluar el perfil del usuario y resolver cualquier inquietud familiar con total discreción y calidez[cite: 2, 4].
+              Coordinamos visitas presenciales para evaluar el perfil del usuario y resolver cualquier inquietud familiar con total discreción y calidez.
             </p>
           </div>
           <button
