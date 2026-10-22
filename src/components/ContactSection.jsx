@@ -55,9 +55,10 @@ export default function ContactSection() {
     return `https://wa.me/573208554452?text=${encodeURIComponent(text)}`;
   };
 
+  // ✅ AJUSTE CON ESPACIADO EQUILIBRADO:
   return (
-    <div className="relative bg-slate-50">
-      <section id="contacto" className="py-20 lg:py-24">
+    <div className="relative bg-slate-50 border-t border-slate-200/80">
+      <section id="contacto" className="pt-10 pb-16 lg:pt-12 lg:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           
           {/* Section Header */}
