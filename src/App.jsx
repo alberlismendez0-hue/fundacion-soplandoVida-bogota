@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import ConditionsSection from './components/ConditionsSection';
 import AboutUs from './components/AboutUs';
 import TrustBanner from './components/TrustBanner';
 import Objectives from './components/Objectives';
@@ -33,10 +32,6 @@ export default function App() {
       <main className="flex-grow">
         {/* A. Hero Section */}
         <Hero onOpenSchedule={handleOpenSchedule} />
-
-
-        {/* B. Condiciones que Acompañamos */}
-        <ConditionsSection onOpenSchedule={handleOpenSchedule} />
 
         {/* C. Quiénes Somos */}
         <AboutUs onOpenSchedule={handleOpenSchedule} />
