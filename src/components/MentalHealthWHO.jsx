@@ -137,13 +137,16 @@ export default function MentalHealthWHO() {
               El Modelo del Hogar Protegido según la Salud Pública Moderna
             </h4>
             <p className="text-xs text-slate-600 mt-1 max-w-3xl leading-relaxed">
-              La OMS recomienda sustituir los internamientos psiquiátricos prolongados y despersonalizados por 
-              <strong> estructuras residenciales intermedias protegidas</strong> en el entorno comunitario, donde el residente conserve sus rutinas, su dignidad y un entorno afectivo seguro[cite: 3].
+              «La promoción de la salud mental requiere que se adopten medidas multisectoriales, en las que participen diversos sectores 
+              del gobierno y organizaciones no gubernamentales o comunitarias. El principal fin ha de ser promover la salud mental durante 
+              todo el ciclo vital, para garantizar a los niños un comienzo saludable en la vida y evitar trastornos mentales en la edad adulta y 
+              la vejez»
             </p>
           </div>
           <span className="text-xs font-mono text-slate-500 flex-shrink-0 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">
-            OMS &bull; Directriz de Salud Mental
           </span>
+
+          
         </div>
 
       </div>
