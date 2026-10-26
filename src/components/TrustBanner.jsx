@@ -47,10 +47,11 @@ export default function TrustBanner({ onOpenSchedule }) {
             ¡Lo que somos, lo somos por ti!
           </p>
 
-          <p className="mt-3.5 text-xs sm:text-sm text-slate-300 italic max-w-2xl mx-auto font-serif leading-relaxed">
-            «Ven de los cuatro vientos, oh aliento de vida, y sopla sobre estos cuerpos para que revivan y se pongan en pie.»
-            <span className="block mt-1 font-sans not-italic text-[10.5px] font-bold text-sky-400 uppercase tracking-widest">
-              — Ezequiel 37:9 (Inspiración de Soplando Vida)
+         <p className="mt-3.5 text-xs sm:text-sm text-slate-300 italic max-w-xl mx-auto font-serif leading-relaxed text-balance">
+            «Ven de los cuatro vientos, oh aliento de vida, y sopla sobre estos cuerpos
+            <br className="hidden sm:inline" /> para que revivan y se pongan en pie.»
+            <span className="block mt-1.5 font-sans not-italic text-[10.5px] font-bold text-sky-400 uppercase tracking-widest">
+              — Ezequiel 37:9
             </span>
           </p>
         </div>

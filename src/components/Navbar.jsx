@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronRight, Phone, MessageCircle, MapPin, Calendar } from 'lucide-react';
-import Logo from './Logo';
 
 export default function Navbar({ onOpenSchedule }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,13 +63,18 @@ export default function Navbar({ onOpenSchedule }) {
       <nav 
         className={`transition-all duration-200 ${
           isScrolled 
-            ? 'bg-white/95 backdrop-blur-md shadow-sm py-2.5 sm:py-3' 
-            : 'bg-white py-3.5 sm:py-4'
+            ? 'bg-white/95 backdrop-blur-md shadow-sm py-2 sm:py-2.5' 
+            : 'bg-white py-2.5 sm:py-3.5'
         } border-b border-slate-100`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-          <a href="#inicio" className="group focus:outline-none">
-            <Logo />
+          {/* Logo Oficial Horizontal */}
+          <a href="#inicio" className="group focus:outline-none flex items-center">
+            <img 
+              src="/images/logo.png" 
+              alt="Hogar Protegido SOPLANDO VIDA - Fundación Social" 
+              className="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]" 
+            />
           </a>
 
           {/* Desktop Nav Links */}
